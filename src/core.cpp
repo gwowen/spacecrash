@@ -88,7 +88,7 @@ int CORE_LoadBmp( const char filename[], bool wrap ) {
       GLuint texid = 1;
 
       glGenTextures( 1, &texid );
-      glBindTextures( GL_TEXTURE_2D, texid );
+      glBindTexture( GL_TEXTURE_2D, texid );
       glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST );
       glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST );
       glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, wrap ? GL_REPEAT : GL_CLAMP );

@@ -21,7 +21,7 @@ struct ivec2 { int x, y; };
 //----------------------------------------------------------------------------
 struct vec2 { float x, y; };
 inline vec2 vmake( float x, float y ) { vec2 r;  r.x = x; r.y = y; return r; }
-inline vec2 vadd( vec2 v1, vec2 v2 ) { return vmake( v1.x + v2.x, v1,y + v2.y ); }
+inline vec2 vadd( vec2 v1, vec2 v2 ) { return vmake( v1.x + v2.x, v1.y + v2.y ); }
 inline vec2 vsub( vec2 v1, vec2 v2 ) { return vmake( v1.x - v2.x, v1.y - v2.y ); }
 inline vec2 vscale( vec2 v, float f ) { return vmake( v.x * f, v.y * f ); }
 inline float vlen2( vec2 v ) { return v.x * v.x + v.y * v.y; }

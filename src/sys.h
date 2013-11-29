@@ -19,7 +19,7 @@
 
 void SYS_Pump();
 void SYS_Show();
-void SYS_GottaQuit();
+bool SYS_GottaQuit();
 void SYS_Sleep( int ms );
 bool SYS_KeyPressed( int key );
 ivec2 SYS_MousePos();

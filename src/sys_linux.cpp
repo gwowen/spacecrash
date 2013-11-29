@@ -52,7 +52,7 @@ bool SYS_KeyPressed( int key ) {
 //-----------------------------------------------------------------------------
 ivec2 SYS_MousePos() {
   int x, y;
-  ivec pos;
+  ivec2 pos;
   glfwGetMousePos( &x, &y );
   pos.x = x;
   pos.y = SYS_HEIGHT - y;
