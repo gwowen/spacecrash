@@ -37,7 +37,7 @@ struct Entity {
 Entity g_entities[ MAX_ENTITIES ];
 
 //-----------------------------------------------------------------------------
-void InsertEntity( ETtpe type, vec2 pos, vec2 vel, float radius, int gfx ) {
+void InsertEntity( EType type, vec2 pos, vec2 vel, float radius, int gfx ) {
   for( int i = 0; i < MAX_ENTITIES; i++ ) {
     if( g_entities[ i ].type == E_NULL ) {
       g_entities[ i ].type = type;
@@ -109,8 +109,8 @@ void Render() {
 				  );
       }
     }
+  }
 }
-
 //-----------------------------------------------------------------------------
 void RunGame() {
 
@@ -128,7 +128,7 @@ void RunGame() {
   //keep the ship on the screen!
   if( g_entities[ MAINSHIP_ENTITY ].pos.x < MAINSHIP_RADIUS )
     g_entities[ MAINSHIP_ENTITY ].pos.x = MAINSHIP_RADIUS;
-  if( g_entities[ MAINSHIP_ENTITY }.pos.x > G_WIDTH - MAINSHIP_RADIUS )
+  if( g_entities[ MAINSHIP_ENTITY ].pos.x > G_WIDTH - MAINSHIP_RADIUS )
     g_entities[ MAINSHIP_ENTITY ].pos.x = G_WIDTH - MAINSHIP_RADIUS;
 
   //possibly insert new rock

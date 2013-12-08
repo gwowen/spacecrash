@@ -120,7 +120,7 @@ void CORE_UnloadBmp( int texix ) {
 }
 
 //---------------------------------------------------------------------
-ivec2 Core_GetBmpSize( int texix ) {
+ivec2 CORE_GetBmpSize( int texix ) {
   ivec2 v;
   v.x = g_textures[ texix ].pixw;
   v.y = g_textures[ texix ].pixh;
